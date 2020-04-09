@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="header">
+            <input id="inp" type="text" placeholder="write new todo here">
+            <div class="button-boxes">
+                <button onclick="add()">add new todo</button>
+                <button 
+                onclick="document.getElementById('content').style.display= 'block'">show all todo</button>
+            </div>
+        </div>
+
+        <div id="content">
+            <table id="table-list">
+                <tr>
+                    <th>list of todos</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
