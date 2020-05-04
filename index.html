@@ -13,13 +13,17 @@
         <div class="header">
             <input id="inp" type="text" placeholder="write new todo here">
             <div class="button-boxes">
-                <button onclick="add()">add new todo</button>
+                <button onclick="add()">Add New</button>
+                <button onclick="Alltodo(this)">All</button>
+                <button onclick="Activetodo(this)">Active</button>
+                <button onclick="compeletedtodo(this)">Completed</button>
+            </div>
         </div>
 
         <div id="content">
             <table id="table-list">
                 <tr>
-                    <th>list of todos</th>
+                    <th>list of todos </th>
                 </tr>
             </table>
         </div>

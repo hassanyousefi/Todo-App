@@ -1,11 +1,13 @@
 *{
     border: none;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
-    
+    user-select: none;
 }
 
 
-input{
+#inp{
     width: 200px;
     height: 40px;
     font-size: 15px;
@@ -14,17 +16,17 @@ input{
     margin: auto;
     padding: 0 10px;
     background-color: rgb(221, 221, 221);
-    transition:  width 0.4s;   
+    transition:  width 0.5s;   
 }
 
 
-input:hover{
+#inp:hover{
     width: 400px;
     background-color: rgb(255, 255, 255);
 }
 
 
-input:focus{
+#inp:focus{
     width: 400px;
     background-color: rgb(255, 255, 255);
 }
@@ -37,34 +39,37 @@ opacity: 0.3;
 
 
 .button-boxes{
-    width: 300px;
+    width: 400px;
     margin: 5px auto;
     text-align: center; 
 }
 
+button:first-child{
+    display: block;
+    margin: 10px auto;
+}
 
 button{
+    margin: auto;
     width: 98px;
+    cursor: pointer;
     padding: 5px;
     background-color: rgb(245, 245, 245);
+    border-radius: 10px;
     border: 1px solid black;
 }
 
 
-button:hover{
-    background-color: rgb(73, 73, 73);
-    color: white;
-}
-
 #content{
     margin: 50px auto;
-    width: 500px;
+    min-width: 500px;
 }
 
 
 #table-list{
+    position: relative;
     margin: auto;
-    width: 500px;
+    min-width: 500px;
     border: 1px solid black;
     
 }
@@ -72,12 +77,60 @@ button:hover{
 
 td , th{
     border: 1px solid black;
+    height: 50px;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 70px;
 }
 
-
-tr:nth-child(even){
-    background-color: rgb(224, 224, 224);
+th{
+    background-color: rgb(219, 219, 219);
 }
 
+td{
+    position: relative;
+}
+
+.removebtn{
+    
+    position: absolute;
+    left:13px;
+    height: 22px;
+    width: 22px;
+    background-color: transparent;
+    color:rgb(0, 0, 0);
+    font-size: 18px;
+    border-radius: 50%;
+}
+
+.removebtn:hover{
+    transition: 0.4s;
+    background-color: rgb(252, 116, 66);
+    color: white;
+
+}
+
+.inpcheckbox{
+    position: absolute;
+    top: 10px;
+    right:12px;
+    height: 17px;
+    width: 17px;
+}
+
+.inpcheckbox:checked{
+    background-color: transparent;
+}
+
+.editicon{
+    position: absolute;
+    top: 10px;
+    right: 42px;
+    height: 17px;
+    width: 17px;
+}
+
+.editicon:hover{
+    box-shadow: 2px 2px 2px 2px rgb(141, 139, 139);
+}
