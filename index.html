@@ -13,8 +13,8 @@
         <div class="header">
             <input id="inp" type="text" placeholder="write new todo here">
             <div class="button-boxes">
-                <button onclick="add()">Add New</button>
-                <button onclick="Alltodo(this)">All</button>
+                <button onclick="addtodo()">Add New</button>
+                <button class="showall" onclick="Alltodo(this)">All</button>
                 <button onclick="Activetodo(this)">Active</button>
                 <button onclick="compeletedtodo(this)">Completed</button>
             </div>
@@ -30,9 +30,11 @@
         </div>
     </div>
     <div class="eb">
-        <input type="text" value="salam" name="" id="editbox">
+        <input type="text" name="" id="editbox">
         <div onclick="okedit()" id="okedit">ok</div>
     </div>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
+    <script src="newmain.js"></script>
+    
 </body>
 </html>

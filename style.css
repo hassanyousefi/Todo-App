@@ -58,6 +58,7 @@ button:first-child{
     margin: 10px auto;
 }
 
+
 button{
     margin: auto;
     width: 98px;
@@ -78,9 +79,9 @@ button{
 #table-list{
     position: relative;
     margin: auto;
-    min-width: 500px;
+    width: 500px;
     border: 1px solid black;
-    
+    overflow: auto;
 }
 
 
