@@ -81,14 +81,14 @@ function lineontext(){
         row.style.transition='0.5s';
         document.getElementsByClassName('editicon')[index-1].style.display="none";
         todos[index-1].active = true;
-        console.log(todos);
+
     }
     else{
         row.style.textDecoration='none';
         row.style.backgroundColor='white';
         document.getElementsByClassName('editicon')[index-1].style.display="inline";
         todos[index-1].active= false;
-        console.log(todos);
+
     }
 }
 
@@ -116,7 +116,7 @@ function okedit(){
     addtodo();
     document.getElementsByClassName('eb')[0].style.display="none";
     document.getElementsByClassName('container')[0].style.opacity="1";
-    console.log(todos);
+
 }
 
 
