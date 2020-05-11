@@ -13,25 +13,21 @@
         <div class="header">
             <input id="inp" type="text" placeholder="write new todo here">
             <div class="button-boxes">
-                <button onclick="addtodo()">Add New</button>
-                <button class="showall" onclick="Alltodo(this)">All</button>
-                <button onclick="Activetodo(this)">Active</button>
-                <button onclick="compeletedtodo(this)">Completed</button>
+                <button onclick="AddTodo()">Add New</button>
+                <button class="showall" onclick="ShowAllTodos(this)">All</button>
+                <button onclick="ShowActiveTodos(this)">Active</button>
+                <button onclick="ShowCompeletedTodos(this)">Completed</button>
             </div>
         </div>
 
         <div id="content">
-            <table id="table-list">
-                <tr>
-                    <th>list of todos </th>
-                </tr>
-            </table>
+            <table id="table-list"></table>
         
         </div>
     </div>
     <div class="eb">
         <input type="text" name="" id="editbox">
-        <div onclick="okedit()" id="okedit">ok</div>
+        <div onclick="OkEdit()" id="okedit">ok</div>
     </div>
     <!-- <script src="main.js"></script> -->
     <script src="newmain.js"></script>
