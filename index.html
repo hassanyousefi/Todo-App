@@ -11,12 +11,12 @@
     <div class="container">
 
         <div class="header">
-            <input id="inp" type="text" placeholder="write new todo here">
+            <input id="NewInput" type="text" placeholder="write new todo here">
             <div class="button-boxes">
-                <button onclick="AddTodo()">Add New</button>
-                <button class="showall" onclick="ShowAllTodos(this)">All</button>
-                <button onclick="ShowActiveTodos(this)">Active</button>
-                <button onclick="ShowCompeletedTodos(this)">Completed</button>
+                <button onclick="AddTodoButton()">Add New</button>
+                <button class="showall" onclick="ShowAllButton(this)">All</button>
+                <button onclick="ShowActiveButton(this)">Active</button>
+                <button onclick="ShowCompeletedButton(this)">Completed</button>
             </div>
         </div>
 
@@ -25,12 +25,10 @@
         
         </div>
     </div>
-    <div class="eb">
-        <input type="text" name="" id="editbox">
-        <div onclick="OkEdit()" id="okedit">ok</div>
+    <div class="editStation">
+        <input type="text" id="editbox">
+        <div onclick="OkEditButton()" id="okedit">ok</div>
     </div>
-    <!-- <script src="main.js"></script> -->
     <script src="newmain.js"></script>
-    
 </body>
 </html>
