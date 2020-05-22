@@ -14,9 +14,9 @@
             <input id="NewInput" type="text" placeholder="write new todo here">
             <div class="button-boxes">
                 <button onclick="AddTodoButton()">Add New</button>
-                <button class="showall" onclick="ShowAllButton(this)">All</button>
-                <button onclick="ShowActiveButton(this)">Active</button>
-                <button onclick="ShowCompeletedButton(this)">Completed</button>
+                <button class="showall" onclick="changeState(0)">All</button>
+                <button onclick="changeState(1)">Active</button>
+                <button onclick="changeState(2)">Completed</button>
             </div>
         </div>
 

@@ -16,31 +16,14 @@ function AddTodoButton(){
     }
     var NewTodo = {text:ValueInput , completed:false};
     todos.push(NewTodo);
-    ShowAllButton();
+    changeState(0);
     input.value = "";
 }
 
-function ShowAllButton(){
-    StateButton = 0;
+function changeState(stateNumber){
+    StateButton = stateNumber;
     Render();
     SetStatesButtonColor();
-}
-
-
-
-function ShowActiveButton(){
-    StateButton = 1;
-    Render();
-    SetStatesButtonColor();
-}
-
-
-
-function ShowCompeletedButton(){
-    StateButton = 2;
-    Render();
-    SetStatesButtonColor();
-
 }
 
 
