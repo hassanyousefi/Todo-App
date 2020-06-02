@@ -6,16 +6,19 @@
     user-select: none;
 
 }
+
 button:focus { outline: none; }
 input:focus, textarea:focus, select:focus{
     outline: none;
 }
 
-.container{
+
+#container{
     margin-top: 50px;
 }
 
-#NewInput{
+
+#new-input{
     cursor: text;
     width: 200px;
     height: 40px;
@@ -29,13 +32,13 @@ input:focus, textarea:focus, select:focus{
 }
 
 
-#NewInput:hover{
+#new-input:hover{
     width: 400px;
     background-color: rgb(255, 255, 255);
 }
 
 
-#NewInput:focus{
+#new-input:focus{
     width: 400px;
     background-color: rgb(255, 255, 255);
 }
@@ -47,11 +50,17 @@ opacity: 0.3;
 }
 
 
-.button-boxes{
+#button-boxes{
     width: 400px;
     margin: 5px auto;
     text-align: center; 
 }
+
+
+.active-state{
+    background-color: rgb(42, 161, 125);
+}
+
 
 button:first-child{
     display: block;
@@ -96,8 +105,6 @@ button{
 }
 
 
-
-
 .removebtn{
     
     position: absolute;
@@ -126,9 +133,17 @@ button{
     cursor: pointer;
 }
 
+
 .inpcheckbox:checked{
     background-color: transparent;
 }
+
+
+.completed-style{
+    text-decoration: line-through;
+    background-color: rgb(177, 84, 84);
+}
+
 
 .editicon{
     cursor: pointer;
@@ -139,12 +154,13 @@ button{
     width: 17px;
 }
 
+
 .editicon:hover{
     box-shadow: 1px 1px 1px 1px rgb(194, 194, 194);
 }
 
 
-#editbox{
+#edit-box{
     position: fixed;
     top: 40%;
     left: 0;
@@ -160,7 +176,7 @@ button{
 }
 
 
-#okedit{
+#ok-edit{
     position: fixed;
     display: flex;
     top: 53%;
@@ -178,11 +194,24 @@ button{
     background-color: rgb(32, 83, 250);
 }
 
-#okedit:hover{
+
+#ok-edit:hover{
     transition: 0.5s;
     background-color: cornflowerblue;
 }
 
-.editStation{
+
+
+.edit-station-on{
+    display: block !important;
+}
+
+
+.edit-station{
     display: none;
+}
+
+
+.opacity{
+    opacity: 0.5;
 }

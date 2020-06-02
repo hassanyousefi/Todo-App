@@ -8,13 +8,13 @@
 </head>
 <body>
     
-    <div class="container">
+    <div id="container">
 
         <div class="header">
-            <input id="NewInput" type="text" placeholder="write new todo here">
-            <div class="button-boxes">
-                <button onclick="AddTodoButton()">Add New</button>
-                <button class="showall" onclick="changeState(0)">All</button>
+            <input id="new-input" type="text" placeholder="write new todo here">
+            <div id="button-boxes">
+                <button onclick="newTodoBtn()">Add New</button>
+                <button onclick="changeState(0)">All</button>
                 <button onclick="changeState(1)">Active</button>
                 <button onclick="changeState(2)">Completed</button>
             </div>
@@ -25,9 +25,9 @@
         
         </div>
     </div>
-    <div class="editStation">
-        <input type="text" id="editbox">
-        <div onclick="OkEditButton()" id="okedit">ok</div>
+    <div class="edit-station" id="edit-station">
+        <input type="text" id="edit-box">
+        <div onclick="okEditBtn()" id="ok-edit">ok</div>
     </div>
     <script src="newmain.js"></script>
 </body>
